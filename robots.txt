@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://kwy0226.github.io/Web-Site/sitemap.xml
