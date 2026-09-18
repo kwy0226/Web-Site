@@ -404,3 +404,21 @@ document.querySelectorAll(".product-image").forEach(card => {
     }
 
 });
+
+// ======================================
+// WhatsApp Click Tracking
+// ======================================
+
+document.querySelectorAll('a[href*="wa.me"]').forEach(link => {
+
+    link.addEventListener("click", () => {
+
+        gtag("event", "whatsapp_click", {
+
+            link_url: link.href
+
+        });
+
+    });
+
+});
